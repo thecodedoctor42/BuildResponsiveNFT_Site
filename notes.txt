@@ -1,0 +1,68 @@
+Responsive design is not a trend, it's
+simply expected by the user for a seemless
+experience.
+
+
+Responsive units:
+
+Absolute units like pixels will always appear 
+the same size no matter where you view them.
+
+Relative units are more suitable for Responsive
+design sites. They are relative to another value
+, dynamic flexibility, and resizeable/scalable.
+
+Examples:
+- Percentages - great for flexible images or containers
+              - when used for width it's based on the width of the parent 
+                element;
+- Font size units:
+    - em - relative to the font size of the parent
+            element e.g. 2em = two times the font
+            size of the parent element.
+         - when using em for padding/margins, this will be a
+            multiplication of the element's font size e.g.
+            an element's font-size is 2em with a parent
+            font-size of 16px, and a margin-top of 1.5em. The
+            top margin will have a size of 1.5 x 2 x 16 = 48px.
+         - i.e. an em value can compound from one level to the next
+    - rem - stands for root em
+          - a rem unit is always relative to the root <html> element
+            or default font size which is usually 16px
+          - therefore these units are unaffected by compounding
+            em values
+- Unitless values - these values determine the size of an element
+                    by multiplying by the font size of the element
+                    e.g. for a <p> with font-size: 16px; line height: 1.5;
+                    the line height = 1.5 x 16 = 24px.
+
+
+Media Queries:
+
+Media queries are the conditional statements of CSS like if() 
+statements in JS.
+
+Breakpoints are where the conditional media query enacts its
+parameters. At these points you can change the lauout, text size,
+and other page adjustments to fit the screen size better
+
+Common BreakPoints:
+- 480px - mobile devices like phones
+- 768px - tablets
+- 1024px - small laptop screens
+- >1280px - desktops and larger screens
+
+Chromes' device mode feature allows you to test out your web app at
+varying screen sizes.
+
+Mobile-first:
+
+Optimize the experience for mobile users and puttin their needs first:
+- Write base CSS layout with mobile devices in mind first.
+- Use media queries to adjust the layout and design for wider screens.
+- Mobile users > desktop users.
+- Often, simpler to optimize for mobile users first.
+- DRYer code 
+
+This also means content first - only display what the users need on mobile
+devices (nothing more)

@@ -1,0 +1,203 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400, 500;
+    color: #2b283a;
+}
+
+/* typography */
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+    color: #d0aaff;
+}
+
+p{
+    line-height: 1.5;
+}
+
+/* links */
+
+a{
+    color: #ef5839;
+    text-decoration: underline dotted; 
+}
+
+a:hover, a:active{
+    color: #d4b44c;
+}
+
+.btn {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    border-radius: 0.35em;
+    text-decoration: none;
+    display: block;
+}
+
+.btn:hover,
+.btn:active{
+    color: #2b283a;
+    background-color: #f3e885;
+}
+
+.dark-container, .dark-btn{
+    background-color: #5f29a3;
+    color: whitesmoke;
+}
+
+.mid-btn{
+    background-color: #d0aaff;
+    color: #5f29a3;
+}
+
+.light-btn{
+    background-color: whitesmoke;
+    color: #5f29a3;
+}
+
+/* layout */
+
+.container{
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.main-img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 1.25em auto 0.875em;
+}
+
+#images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0.875em 0;
+}
+
+.feature-item{
+    flex: 1 260px;
+}
+
+.secondary-img{
+    width: 100%;
+}
+
+footer{
+    color: #5f29a3;
+    text-align: center;
+}
+
+body, 
+h1, 
+h2, 
+h3,
+section{
+    margin: 0;
+}
+
+header, 
+section, 
+footer{
+    padding: 1.25em 0;
+}
+
+header{
+    text-align: center;
+}
+
+/* ----- NAVIGATION ----- */
+
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+li{
+    padding-top: 0.85em;
+}
+
+li:not(:last-child) {
+    padding-bottom: 0.85em;
+    border-bottom: 1px dotted #a190b6;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 480px) {
+    .btn{
+        display: inline-block;
+        margin: 1em 0.5em 1em 0em;
+    }
+}
+
+@media (min-width: 768px){
+    header, 
+    section, 
+    footer{
+        padding: 2.75em 0;
+    }
+
+    header{
+        text-align: left;
+        padding-bottom: 1.75em;
+    }
+    
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        color: #d0aaff;
+    }
+
+    p{
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    li{
+        width: 30%;
+        padding: 1em 0;
+        border-bottom: 1px solid #a190b6;
+    }
+}
